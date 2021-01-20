@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #f4f5f9;
+}
+.header{
+  text-align: center;
+  background-color: white;
+  width: 100%;
+  padding: 25px 0px;
+}
+.header p{
+  font-size: xx-large;
+  color: black;
+  font-weight: bold;
+}
+.main-course-container{
+  width: 1050px;
+  height: auto;
+  /* background-color: #c6c4c3; */
+  margin: 50px auto;
+  padding: 25px 50px;
+  border-radius: 5px;
+  /* box-shadow: 0 0 50px black; */
+}
+.course-container{
+  background-color: white;
+  margin: 10px 0;
+  border-radius: 5px;
+  padding: 30px 60px;
+  box-shadow: 0 0 1px grey;
+  transition: 2s;
+}
+#day{
+  font-size: 30px;
+  margin-top: 20px;
+  font-family: "Garamond";
+  font-weight: bold;
+}
+.sidebar{
+  height: 1050px;
+  width: 180px;
+  background-color: white;
+  position: fixed;
+  padding: 20px 60px;
+}
+.sidebar input[type=button]{
+  border: none;
+  background-color: white;
+  margin: 10px 0;
+  color: black;
+  display: block;
+  font-size: medium;
+  cursor: pointer;
+}
+.form{
+  position: fixed;
+  width: 30%;
+  height: 600px;
+  top: 100%;
+  left: 100%;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 0 0 50px grey;
+  padding: 80px 100px;
+  filter: brightness(100%);
+}
+.form label{
+  font-size: 30px;
+}
+.form input[type=text], .form input[type=time]{
+  height: 30px;
+  width: 100%;
+  font-size: 30px;
+}
+.form input[type=submit]{
+  padding: 5px 10px;
+  height: 45px;
+  font-size: 30px;
+  margin-top: 25px;
+}
+
