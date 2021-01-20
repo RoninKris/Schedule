@@ -94,6 +94,32 @@
           <center><input type="submit" value="Submit"></center>
         </form>
     </div>
+    <div class="remove form">
+      <form action="remove.php" method="post">
+        <center>
+          <select name="day" id="day">
+            <optgroup>
+              <option value="monday">Monday</option>
+              <option value="tuesday">Tuesday</option>
+              <option value="wednesday">Wednesday</option>
+              <option value="thursday">Thursday</option>
+              <option value="friday">Friday</option>
+              <option value="saturday">Saturday</option>
+              <option value="sunday">Sunday</option>
+            </optgroup>
+          </select><br>
+        </center>
+          <label for="subject">Subject</label><br>
+          <input type="text" name="subject"> <br>
+          <label for="teacher">Teacher</label><br>
+          <input type="text" name="teacher"> <br>
+          <label for="start-time">Start Time</label><br>
+          <input type="time" name="start-time"> <br>
+          <label for="end-time">End Time</label><br>
+          <input type="time" name="end-time"> <br>
+          <center><input type="submit" value="Submit"></center>
+        </form>
+    </div>
   </div>
 </body>
 </html>
