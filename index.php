@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="script.js"></script>
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
@@ -69,10 +68,11 @@
       ?>
     </div>
     <div class="add form">
-      <form action="add.php" method="post">
+      <form name="add-form"action="add.php" method="post" onsubmit="return validateAddForm()">
         <center>
           <select name="day" id="day">
             <optgroup>
+              <option value="" selected disabled>Select Day</option>
               <option value="monday">Monday</option>
               <option value="tuesday">Tuesday</option>
               <option value="wednesday">Wednesday</option>
@@ -84,13 +84,13 @@
           </select><br>
         </center>
           <label for="subject">Subject</label><br>
-          <input type="text" name="subject"> <br>
+          <input type="text" name="subject" required> <br>
           <label for="teacher">Teacher</label><br>
           <input type="text" name="teacher"> <br>
-          <label for="start-time">Start Time</label><br>
+          <label for="start-time" required>Start Time</label><br>
           <input type="time" name="start-time"> <br>
           <label for="end-time">End Time</label><br>
-          <input type="time" name="end-time"> <br>
+          <input type="time" name="end-time" required> <br>
           <center><input type="submit" value="Submit"></center>
         </form>
     </div>
@@ -122,4 +122,6 @@
     </div>
   </div>
 </body>
+
+<script src="script.js"></script>
 </html>
