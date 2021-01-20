@@ -78,6 +78,17 @@ body{
   padding: 80px 100px;
   filter: brightness(100%);
 }
+.form #close-button{
+  font-family: "Arial";
+  position: absolute;
+  color: #494851;
+  font-size: 30px;
+  right: 10px;
+  top: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
 .form label{
   font-size: 30px;
   color: white;
