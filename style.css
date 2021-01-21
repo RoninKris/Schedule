@@ -45,6 +45,32 @@ body{
   font-weight: bold;
   color: white;
 }
+#add-button{
+  position: fixed;
+  top: 12%;
+  right: 10%;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50%;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  background: #52007b;
+  border: 1px solid #494851;
+  cursor: pointer;
+}
+#remove-button{
+  float: right;
+  margin-top: 15px;
+  padding: 0 20px;
+  background-color: #52007b;
+  color: white;
+  border: 1px solid #494851;
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
+}
 .sidebar{
   height: 1050px;
   width: 180px;

@@ -1,6 +1,6 @@
 <!-- TODO:
-* Sort the subjects by time
-* Add the other features -->
+* Add the other features 
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,56 +17,37 @@
   <input type="button" value="Update">
   </div>
   <div class="main-container">
-    
+    <a onClick="showAddForm()" id="add-button">&plus;</a>
     <div class="header"><p>Second Semester</p></div>
+    <?php include('display.php'); ?>
     <div class="main-course-container">
       <p id="day">Monday</p>
-      <?php
-      function createDiv($day, $connect){
-        $query = "select day, subject, teacher, time_format(startTime, '%h:%i') as startTime, time_format(endTime, '%h:%i') as endTime from ScheduleData";
-        $result = $connect->query($query);
-        if($result->num_rows > 0){
-          while($row = $result->fetch_assoc()){
-            if($row["day"] == $day){
-              echo "<div class=course-container>".
-              "  <h4 id=subject>" . $row["subject"] ."</h4>".
-              "  <p id=teacher>Teacher:" . $row["teacher"] ."</p>".
-              "  <p id=schedule>" . $row["startTime"] ."-". $row["endTime"]."</p>".
-              "  </div>";    
-            }
-          }
-        }
-      }
-        //Connect database
-        $connect = new mysqli('localhost', 'root', '', 'Schedule');
-        if($connect->connect_error){
-          die("Connection Failed: ".$connect_error);
-        }
-            createDiv("monday", $connect);           
-      ?>
+        <?php 
+        createDiv("monday");
+        ?>
       <p id="day">Tuesday</p>
       <?php
-        createDiv("tuesday", $connect);
+        createDiv("tuesday");
       ?>
       <p id="day">Wednesday</p>
       <?php
-        createDiv("wednesday", $connect);
+        createDiv("wednesday");
       ?>
       <p id="day">Thursday</p>
       <?php
-        createDiv("thursday", $connect);
+        createDiv("thursday");
       ?>
       <p id="day">Friday</p>
       <?php
-        createDiv("friday", $connect);
+        createDiv("friday");
       ?>
       <p id="day">Saturday</p>
       <?php
-        createDiv("saturday", $connect);
+        createDiv("saturday");
       ?>
       <p id="day">Sunday</p>
       <?php
-        createDiv("sunday", $connect);
+        createDiv("sunday");
         
       ?>
     </div>

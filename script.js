@@ -8,6 +8,9 @@ function hideAddForm(){
   "left: 100%;";
   console.log("test");
 }
+function showRemoveButton(){
+  document.querySelector("#remove-button").style = "margin-top: 15px;";
+}
 function validateAddForm(){
   if(document.forms["add-form"]["day"].value == ""){
     alert("Please select a day first");
