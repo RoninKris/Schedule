@@ -10,7 +10,7 @@
               "  <a href='edit.php?id=$row[id]&day=$row[day]&subject=$row[subject]&teacher=$row[teacher]&start-time=$row[startTime]&end-time=$row[endTime]' id='edit-button'>edit</a>".
               "  <a href='remove.php?id=$row[id]' id='remove-button'>&minus;</a>".
               "  <h4 id=subject>" . $row["subject"] ."</h4>".
-              "  <p id=teacher>Teacher:" . $row["teacher"] ."</p>".
+              "  <p id=teacher>Teacher: " . $row["teacher"] ."</p>".
               "  <p id=schedule>" . $row["startTime"] ."-". $row["endTime"]."</p>".
               "  </div>";    
             }
