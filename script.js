@@ -1,18 +1,29 @@
+let addIsOpen = false;
+let editIsOpen = false;
 function showAddForm(){
-  document.querySelector(".add").style="top: 9%;" +
-  "left: 30%;";
-  console.log("test");
+  if(editIsOpen) hideEditForm();
+  addIsOpen = true;
+  document.querySelector(".add").style="top: 9%;";
 }
 function hideAddForm(){
-  document.querySelector(".add").style="top: 100%;" +
-  "left: 100%;";
-  console.log("test");
+  document.querySelector(".add").style="top: 100%;";
 }
-function showRemoveButton(){
-  document.querySelector("#remove-button").style = "margin-top: 15px;";
+function showEditForm(){
+  if(addIsOpen) hideAddForm();
+  editIsOpen = true;
+  document.querySelector(".edit").style="top: 9%;";
+}
+function hideEditForm(){
+  document.querySelector(".edit").style="top: 100%;";
 }
 function validateAddForm(){
   if(document.forms["add-form"]["day"].value == ""){
+    alert("Please select a day first");
+    return false;
+  }
+}
+function validateEditForm(){
+  if(document.forms["edit-form"]["day"].value == ""){
     alert("Please select a day first");
     return false;
   }

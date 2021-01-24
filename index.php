@@ -1,21 +1,12 @@
-<!-- TODO:
-* Add the other features 
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>Scheduler</title>
 </head>
 <body>
-  <div class="sidebar">
-  <input type="button" value="Add" onClick="showAddForm()">
-  <input type="button" value="Remove">
-  <input type="button" value="Edit">
-  <input type="button" value="Update">
-  </div>
   <div class="main-container">
     <a onClick="showAddForm()" id="add-button">&plus;</a>
     <div class="header"><p>Second Semester</p></div>
@@ -52,7 +43,8 @@
       ?>
     </div>
     <div class="add form">
-      <input type="button" value="X" id="close-button" onClick="hideAddForm()">
+      <div class="header"><input type="button" value="X" id="close-button" onClick="hideAddForm()"></div>
+      
       <form name="add-form"action="add.php" method="post" onsubmit="return validateAddForm()">
         <center>
           <select name="day" id="day">

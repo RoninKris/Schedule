@@ -71,50 +71,53 @@ body{
   font-size: large;
   font-weight: bold;
 }
-.sidebar{
-  height: 1050px;
-  width: 180px;
-  background-color: #1a1c1e;
-  position: fixed;
-  /* padding: 20px 60px; */
-  border: 1px solid #494851;
-}
-.sidebar input[type=button]{
-  border: none;
-  background-color: #1a1c1e;
-  margin: -1px;
-  color: black;
-  display: block;
-  font-size: medium;
-  cursor: pointer;
+#edit-button{
+  float: right;
+  margin-top: 15px;
+  padding: 0 20px;
+  background-color: #52007b;
   color: white;
-  border-top: 1px solid #494851;
-  border-bottom: 1px solid #494851;
-  width: 100%;
-  padding: 30px 60px;
+  border: 1px solid #494851;
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
+}
+.hidden{
+  position: absolute;
+  top: 100%;
 }
 .form{
   position: fixed;
   width: 30%;
   height: 600px;
   top: 100%;
-  left: 100%;
+  left: 30%;
   background-color: #121214;
   border: 1px solid #494851;
   padding: 80px 100px;
   filter: brightness(100%);
+  transition: .5s;
+}
+.form .header{
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  background-color: #52007b;
 }
 .form #close-button{
   font-family: "Arial";
   position: absolute;
-  color: #494851;
-  font-size: 30px;
-  right: 10px;
-  top: 10px;
+  color: white;
+  font-size: 20px;
+  right: 15px;
+  top: 15px;
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
+
 .form label{
   font-size: 30px;
   color: white;
