@@ -1,26 +1,26 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
-body{
+body {
   background-color: #1a1c1e;
 }
-.header{
+.header {
   text-align: center;
   background-color: #121214;
   width: 100%;
   padding: 25px 0px;
 }
-.header p{
+.header p {
   font-size: xx-large;
   color: white;
   font-weight: bold;
 }
-.main-course-container{
-  width: 1050px;
+.main-course-container {
+  /* width: 90%; */
   height: auto;
   /* background-color: #c6c4c3; */
   margin: 50px auto;
@@ -28,7 +28,8 @@ body{
   border-radius: 5px;
   /* box-shadow: 0 0 50px black; */
 }
-.course-container{
+
+.course-container {
   /* background-color: white; */
   margin: 10px 0;
   border-radius: 5px;
@@ -38,14 +39,14 @@ body{
   transition: 2s;
   color: white;
 }
-#day{
+#day {
   font-size: 30px;
   margin-top: 20px;
   font-family: "Garamond";
   font-weight: bold;
   color: white;
 }
-#add-button{
+#add-button {
   position: fixed;
   top: 12%;
   right: 10%;
@@ -60,7 +61,7 @@ body{
   border: 1px solid #494851;
   cursor: pointer;
 }
-#remove-button{
+#remove-button {
   float: right;
   margin-top: 15px;
   padding: 0 20px;
@@ -71,7 +72,7 @@ body{
   font-size: large;
   font-weight: bold;
 }
-#edit-button{
+#edit-button {
   float: right;
   margin-top: 15px;
   padding: 0 20px;
@@ -82,23 +83,23 @@ body{
   font-size: large;
   font-weight: bold;
 }
-.hidden{
+.hidden {
   position: absolute;
   top: 100%;
 }
-.form{
+.form {
   position: fixed;
   width: 30%;
-  height: 600px;
-  top: 100%;
+  height: 70%;
+  top: 200%;
   left: 30%;
   background-color: #121214;
   border: 1px solid #494851;
   padding: 80px 100px;
   filter: brightness(100%);
-  transition: .5s;
+  transition: 0.5s;
 }
-.form .header{
+.form .header {
   left: 0;
   top: 0;
   position: absolute;
@@ -106,7 +107,7 @@ body{
   height: auto;
   background-color: #52007b;
 }
-.form #close-button{
+.form #close-button {
   font-family: "Arial";
   position: absolute;
   color: white;
@@ -118,12 +119,14 @@ body{
   cursor: pointer;
 }
 
-.form label{
+.form label {
   font-size: 30px;
   color: white;
   font-family: "Arial";
 }
-.form input[type=text], .form input[type=time], select{
+.form input[type="text"],
+.form input[type="time"],
+select {
   height: 30px;
   width: 100%;
   font-size: 30px;
@@ -132,16 +135,16 @@ body{
   margin: 15px 0;
   padding: 5px 10px;
 }
-.form input[type=text]{
+.form input[type="text"] {
   font-size: large;
 }
-select{
+select {
   height: 45px;
 }
-optgroup{
+optgroup {
   font-family: "Arial";
 }
-.form input[type=submit]{
+.form input[type="submit"] {
   padding: 10px 30px;
   height: 45px;
   font-size: 20px;
@@ -152,3 +155,15 @@ optgroup{
   color: white;
 }
 
+@media only screen and (min-width: 768px) {
+  /*For Desktop*/
+  .main-course-container {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  /*For tablet*/
+  .main-course-container {
+    width: 90%;
+  }
+}

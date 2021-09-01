@@ -1,3 +1,4 @@
+<!-- TODO: DEPLOY this project by following this link https://dev.to/jorenrui/6-ways-to-deploy-your-personal-websites--php-mysql-web-apps-for-free-4m3a#heroku-mysql -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,7 @@
 <body>
   <div class="main-container">
     <a onClick="showAddForm()" id="add-button">&plus;</a>
-    <div class="header"><p>Second Semester</p></div>
+    <div class="header"><p>Scheduler</p></div>
     <?php include('display.php'); ?>
     <div class="main-course-container">
       <p id="day">Monday</p>

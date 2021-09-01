@@ -6,7 +6,7 @@ function showAddForm(){
   document.querySelector(".add").style="top: 9%;";
 }
 function hideAddForm(){
-  document.querySelector(".add").style="top: 100%;";
+  document.querySelector(".add").style="top: 200%;";
 }
 function showEditForm(){
   if(addIsOpen) hideAddForm();
